@@ -128,11 +128,7 @@
       },
       {
         "runtime": "echo $NETLIFY"
-      },
-      {
-        "runtime": "yarn -v"
-      },
-      "{workspaceRoot}/yarn.lock"
+      }
     ],
     "production": [
       "default",
@@ -142,5 +138,8 @@
       "!{projectRoot}/vitest.config.mts",
       "!{projectRoot}/src/test-setup.[jt]s"
     ]
+  },
+  "sync": {
+    "applyChanges": true
   }
 }
